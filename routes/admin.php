@@ -6,6 +6,12 @@ use Illuminate\Support\Facades\Route;
 Route::prefix('admin')->group(function() {
 
     Route::get('/login', [AdminController::class, 'loginPage'])
-            ->name('admin_login');
+            ->name('admin.login');
 
-})->middleware('admin');
+    Route::get('/register', [AdminController::class, 'registerPage'])
+            ->name('admin.register');
+
+    Route::get('/dashboard', [AdminController::class, 'dashboard'])
+            ->name('admin.dashboard');
+
+});
