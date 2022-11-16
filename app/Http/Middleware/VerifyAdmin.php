@@ -19,8 +19,8 @@ class VerifyAdmin
     {
         if(!Auth::guard('admin')->check()) {
             return redirect()
-                    ->route('login_form')
-                    ->with('error', 'Access Forbidden!');
+                    ->route('admin.login-page')
+                    ->with('error', 'Login required!');
         }
 
         return $next($request);
