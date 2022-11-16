@@ -1,7 +1,6 @@
 @extends('admin.base')
 @section('content')
-
-<div class="flex h-screen bg-gray-50 dark:bg-gray-900" :class="{ 'overflow-hidden': isSideMenuOpen }">
+    <div class="flex h-screen bg-gray-50 dark:bg-gray-900" :class="{ 'overflow-hidden': isSideMenuOpen }">
         <!-- Desktop sidebar -->
         <aside class="z-20 hidden w-64 overflow-y-auto bg-white dark:bg-gray-800 md:block flex-shrink-0">
             <div class="py-4 text-gray-500 dark:text-gray-400">
@@ -31,8 +30,7 @@
                             @click="togglePagesMenu" aria-haspopup="true">
                             <span class="inline-flex items-center">
                                 <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round"
-                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                    stroke="currentColor">
+                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                                     <path
                                         d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z">
                                     </path>
@@ -47,11 +45,9 @@
                         </button>
                         <template x-if="isPagesMenuOpen">
                             <ul x-transition:enter="transition-all ease-in-out duration-300"
-                                x-transition:enter-start="opacity-25 max-h-0"
-                                x-transition:enter-end="opacity-100 max-h-xl"
+                                x-transition:enter-start="opacity-25 max-h-0" x-transition:enter-end="opacity-100 max-h-xl"
                                 x-transition:leave="transition-all ease-in-out duration-300"
-                                x-transition:leave-start="opacity-100 max-h-xl"
-                                x-transition:leave-end="opacity-0 max-h-0"
+                                x-transition:leave-start="opacity-100 max-h-xl" x-transition:leave-end="opacity-0 max-h-0"
                                 class="p-2 mt-2 space-y-2 overflow-hidden text-sm font-medium text-gray-500 rounded-md shadow-inner bg-gray-50 dark:text-gray-400 dark:bg-gray-900"
                                 aria-label="submenu">
                                 <li
@@ -91,8 +87,7 @@
             x-transition:leave="transition ease-in-out duration-150" x-transition:leave-start="opacity-100"
             x-transition:leave-end="opacity-0"
             class="fixed inset-0 z-10 flex items-end bg-black bg-opacity-50 sm:items-center sm:justify-center"></div>
-        <aside
-            class="fixed inset-y-0 z-20 flex-shrink-0 w-64 mt-16 overflow-y-auto bg-white dark:bg-gray-800 md:hidden"
+        <aside class="fixed inset-y-0 z-20 flex-shrink-0 w-64 mt-16 overflow-y-auto bg-white dark:bg-gray-800 md:hidden"
             x-show="isSideMenuOpen" x-transition:enter="transition ease-in-out duration-150"
             x-transition:enter-start="opacity-0 transform -translate-x-20" x-transition:enter-end="opacity-100"
             x-transition:leave="transition ease-in-out duration-150" x-transition:leave-start="opacity-100"
@@ -125,8 +120,7 @@
                             @click="togglePagesMenu" aria-haspopup="true">
                             <span class="inline-flex items-center">
                                 <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round"
-                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                    stroke="currentColor">
+                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                                     <path
                                         d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z">
                                     </path>
@@ -144,8 +138,7 @@
                                 x-transition:enter-start="opacity-25 max-h-0"
                                 x-transition:enter-end="opacity-100 max-h-xl"
                                 x-transition:leave="transition-all ease-in-out duration-300"
-                                x-transition:leave-start="opacity-100 max-h-xl"
-                                x-transition:leave-end="opacity-0 max-h-0"
+                                x-transition:leave-start="opacity-100 max-h-xl" x-transition:leave-end="opacity-0 max-h-0"
                                 class="p-2 mt-2 space-y-2 overflow-hidden text-sm font-medium text-gray-500 rounded-md shadow-inner bg-gray-50 dark:text-gray-400 dark:bg-gray-900"
                                 aria-label="submenu">
                                 <li
@@ -208,8 +201,8 @@
                     <ul class="flex items-center flex-shrink-0 space-x-6">
                         <!-- Theme toggler -->
                         <li class="flex">
-                            <button class="rounded-md focus:outline-none focus:shadow-outline-purple"
-                                @click="toggleTheme" aria-label="Toggle color mode">
+                            <button class="rounded-md focus:outline-none focus:shadow-outline-purple" @click="toggleTheme"
+                                aria-label="Toggle color mode">
                                 <template x-if="!dark">
                                     <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
                                         <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z">
@@ -227,8 +220,7 @@
                         </li>
                         <!-- Notifications menu -->
                         <li class="relative">
-                            <button
-                                class="relative align-middle rounded-md focus:outline-none focus:shadow-outline-purple"
+                            <button class="relative align-middle rounded-md focus:outline-none focus:shadow-outline-purple"
                                 @click="toggleNotificationsMenu" @keydown.escape="closeNotificationsMenu"
                                 aria-label="Notifications" aria-haspopup="true">
                                 <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
@@ -317,17 +309,20 @@
                                         </a>
                                     </li>
                                     <li class="flex">
-                                        <a class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
-                                            href="#">
-                                            <svg class="w-4 h-4 mr-3" aria-hidden="true" fill="none"
-                                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                viewBox="0 0 24 24" stroke="currentColor">
-                                                <path
-                                                    d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1">
-                                                </path>
-                                            </svg>
-                                            <span>Log out</span>
-                                        </a>
+                                        <form action="{{ route('admin.logout') }}" class="w-full" method="POST">
+                                            @csrf
+                                            <button type="submit"
+                                                class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200">
+                                                <svg class="w-4 h-4 mr-3" aria-hidden="true" fill="none"
+                                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path
+                                                        d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1">
+                                                    </path>
+                                                </svg>
+                                                <span>Log out</span>
+                                            </button>
+                                        </form>
                                     </li>
                                 </ul>
                             </template>
@@ -748,8 +743,7 @@
                                             <button
                                                 class="px-3 py-1 rounded-md rounded-l-lg focus:outline-none focus:shadow-outline-purple"
                                                 aria-label="Previous">
-                                                <svg aria-hidden="true" class="w-4 h-4 fill-current"
-                                                    viewBox="0 0 20 20">
+                                                <svg aria-hidden="true" class="w-4 h-4 fill-current" viewBox="0 0 20 20">
                                                     <path
                                                         d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
                                                         clip-rule="evenodd" fill-rule="evenodd"></path>
@@ -799,8 +793,7 @@
                                             <button
                                                 class="px-3 py-1 rounded-md rounded-r-lg focus:outline-none focus:shadow-outline-purple"
                                                 aria-label="Next">
-                                                <svg class="w-4 h-4 fill-current" aria-hidden="true"
-                                                    viewBox="0 0 20 20">
+                                                <svg class="w-4 h-4 fill-current" aria-hidden="true" viewBox="0 0 20 20">
                                                     <path
                                                         d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                                                         clip-rule="evenodd" fill-rule="evenodd"></path>
@@ -861,4 +854,4 @@
             </main>
         </div>
     </div>
-    @endsection
+@endsection
