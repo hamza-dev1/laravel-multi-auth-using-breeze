@@ -19,4 +19,7 @@ Route::prefix('author')->group(function () {
 
     Route::post('/register', [AuthorController::class, 'register'])
             ->name('author.register');
+
+    Route::post('/logout', [AuthorController::class, 'logout'])
+            ->name('author.logout');
 });
