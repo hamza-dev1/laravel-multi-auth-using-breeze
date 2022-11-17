@@ -50,6 +50,11 @@ class AuthorController extends Controller
         return view('author.register');
     }
 
+    public function logout() {
+        Auth::guard('author')->logout();
+        return redirect()->route('author.login')->with('success', 'You\'ve logged out successfully');
+    }
+
     public function dashboard() {
         return view('author.dashboard');
     }
