@@ -12,7 +12,7 @@ Route::prefix('author')->group(function () {
             ->name('author.register-page');
 
     Route::get('/dashboard', [AuthorController::class, 'dashboard'])
-            ->name('author.dashboard');
+            ->name('author.dashboard')->middleware('author');
 
     Route::post('/login', [AuthorController::class, 'login'])
             ->name('author.login');
