@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Author;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class AuthorController extends Controller
 {
@@ -30,7 +32,17 @@ class AuthorController extends Controller
     }
 
     public function register(Request $request) {
+        $request->validate([
+            'name' => ['required', 'min:3', 'max:60'],
+            'email' => ['required', 'unique:authors,email'],
+            'password' => ['required', 'min:8', 'confirmed']
+        ]);
+        $data = $request->all();
+        $data['password'] = Hash::make($data['password']);
+        Author::create($data);
 
+        return redirect()
+                ->route('author.login');
     }
 
     public function registerPage()
