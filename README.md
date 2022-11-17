@@ -10,5 +10,4 @@ Login             |  Register
 
 Login             |  Register
 :-------------------------:|:-------------------------:
-![author-login](https://user-images.githubusercontent.com/90864553/202552938-2f8a30c1-c526-46cd-9a23-1b8fc3f6b0f5.gif)
-  |  ![author-register](https://user-images.githubusercontent.com/90864553/202553163-96b924d6-70eb-4d4f-9324-13f6a5554583.gif)
+![author-login](https://user-images.githubusercontent.com/90864553/202552938-2f8a30c1-c526-46cd-9a23-1b8fc3f6b0f5.gif) | ![author-register](https://user-images.githubusercontent.com/90864553/202553163-96b924d6-70eb-4d4f-9324-13f6a5554583.gif)
