@@ -52,6 +52,7 @@ class AdminController extends Controller
             ],
             'password' => [
                 'required',
+                'min:8',
                 'confirmed'
             ]
         ]);
@@ -59,7 +60,8 @@ class AdminController extends Controller
         $data['password'] = Hash::make($data['password']);
         Admin::create($data);
 
-        return view('admin.register');
+        return redirect()
+                ->route('admin.login');
     }
 
     public function registerPage()
