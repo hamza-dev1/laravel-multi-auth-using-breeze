@@ -11,25 +11,25 @@
                     <i class="fas fa-bars"></i></button>
                 <a class="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
                     href="javascript:void(0)">
-                    Tailwind Starter Kit
+                    AuthBreeze
                 </a>
                 <ul class="md:hidden items-center flex flex-wrap list-none">
                     <li class="inline-block relative">
-                        <a class="text-blueGray-500 block py-1 px-3" href="#pablo"
+                        <a class="text-blueGray-500 block py-1 px-3" href="#"
                             onclick="openDropdown(event,'notification-dropdown')"><i class="fas fa-bell"></i></a>
                         <div class="hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1"
                             style="min-width: 12rem;" id="notification-dropdown">
-                            <a href="#pablo"
-                                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">Action</a><a
-                                href="#pablo"
-                                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">Another
-                                action</a><a href="#pablo"
-                                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">Something
-                                else here</a>
-                            <div class="h-0 my-2 border border-solid border-blueGray-100"></div>
-                            <a href="#pablo"
-                                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">Seprated
-                                link</a>
+                            <form action="{{ route('author.logout') }}" method="post" class="w-full">
+                                @csrf
+                                <a href="#"
+                                    class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">
+                                    Page</a>
+                                <div class="h-0 my-2 border border-solid border-blueGray-100"></div>
+                                <button type="submit"
+                                    class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">
+                                    Logout
+                                </button>
+                            </form>
                         </div>
                     </li>
                     <li class="inline-block relative">
@@ -44,17 +44,17 @@
                         </a>
                         <div class="hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1"
                             style="min-width: 12rem;" id="user-responsive-dropdown">
-                            <a href="#pablo"
-                                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">Action</a><a
-                                href="#pablo"
-                                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">Another
-                                action</a><a href="#pablo"
-                                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">Something
-                                else here</a>
-                            <div class="h-0 my-2 border border-solid border-blueGray-100"></div>
-                            <a href="#pablo"
-                                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">Seprated
-                                link</a>
+                            <form action="{{ route('author.logout') }}" method="post" class="w-full">
+                                @csrf
+                                <a href="#"
+                                    class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">
+                                    Page</a>
+                                <div class="h-0 my-2 border border-solid border-blueGray-100"></div>
+                                <button type="submit"
+                                    class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">
+                                    Logout
+                                </button>
+                            </form>
                         </div>
                     </li>
                 </ul>
@@ -99,8 +99,8 @@
                             <a class="text-blueGray-700 hover:text-blueGray-500 text-sm block mb-4 no-underline font-semibold"
                                 href="#/documentation/styles"><i
                                     class="fas fa-paint-brush mr-2 text-blueGray-400 text-base"></i>
-                                    option
-                                </a>
+                                option
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -132,17 +132,17 @@
                         </a>
                         <div class="hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1"
                             style="min-width: 12rem;" id="user-dropdown">
-                            <a href="#pablo"
-                                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">Action</a><a
-                                href="#pablo"
-                                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">Another
-                                action</a><a href="#pablo"
-                                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">Something
-                                else here</a>
-                            <div class="h-0 my-2 border border-solid border-blueGray-100"></div>
-                            <a href="#pablo"
-                                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">Seprated
-                                link</a>
+                            <form action="{{ route('author.logout') }}" method="post" class="w-full">
+                                @csrf
+                                <a href="#"
+                                    class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">
+                                    Page</a>
+                                <div class="h-0 my-2 border border-solid border-blueGray-100"></div>
+                                <button type="submit"
+                                    class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">
+                                    Logout
+                                </button>
+                            </form>
                         </div>
                     </ul>
                 </div>
