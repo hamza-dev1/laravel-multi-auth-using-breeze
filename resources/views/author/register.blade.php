@@ -34,13 +34,19 @@
                                 <div class="text-gray-500 text-center mb-3 font-bold">
                                     <small>Or sign in with credentials</small>
                                 </div>
-                                <form>
+                                <form
+                                    method="post"
+                                    action="{{ route('author.register') }}">
+                                    @csrf
                                     <div class="relative w-full mb-3">
                                         <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
                                             for="">Name</label>
                                         <input type="text" name="name"
                                             class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                                             placeholder="Your name" style="transition: all 0.15s ease 0s;" />
+                                            @error('name')
+                                        <span class="text-xs text-red-800">{{ $message }}</span>
+                                            @enderror
                                     </div>
                                     <div class="relative w-full mb-3">
                                         <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
@@ -48,6 +54,9 @@
                                         <input type="email" name="email"
                                             class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                                             placeholder="Email" style="transition: all 0.15s ease 0s;" />
+                                            @error('email')
+                                        <span class="text-xs text-red-800">{{ $message }}</span>
+                                            @enderror
                                     </div>
                                     <div class="relative w-full mb-3">
                                         <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
@@ -55,6 +64,9 @@
                                         <input type="password" name="password"
                                             class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                                             placeholder="Password" style="transition: all 0.15s ease 0s;" />
+                                            @error('password')
+                                        <span class="text-xs text-red-800">{{ $message }}</span>
+                                            @enderror
                                     </div>
                                     <div class="relative w-full mb-3">
                                         <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
@@ -66,7 +78,7 @@
                                     <div class="text-center mt-6">
                                         <button
                                             class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full"
-                                            type="button" style="transition: all 0.15s ease 0s;">
+                                            type="submit" style="transition: all 0.15s ease 0s;">
                                             Sign Up
                                         </button>
                                     </div>
@@ -75,14 +87,6 @@
                                         <a href="{{ route('author.login-page') }}" class="text-blue-500">Sign in</a>
                                     </div>
                                 </form>
-                            </div>
-                        </div>
-                        <div class="flex flex-wrap mt-6">
-                            <div class="w-1/2">
-                                <a href="#pablo" class="text-gray-300"><small>Forgot password?</small></a>
-                            </div>
-                            <div class="w-1/2 text-right">
-                                <a href="#pablo" class="text-gray-300"><small>Create new account</small></a>
                             </div>
                         </div>
                     </div>
