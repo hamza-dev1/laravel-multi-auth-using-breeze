@@ -39,7 +39,7 @@
                                 <span
                                     class="w-12 h-12 text-sm text-white bg-blueGray-200 inline-flex items-center justify-center rounded-full"><img
                                         alt="..." class="w-full rounded-full align-middle border-none shadow-lg"
-                                        src="./assets/img/team-1-800x800.jpg" /></span>
+                                        src="{{ asset('author-assets/img/team-1-800x800.jpg') }}" /></span>
                             </div>
                         </a>
                         <div class="hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1"
@@ -89,72 +89,18 @@
                                 href="#/dashboard"><i class="fas fa-tv opacity-75 mr-2 text-sm"></i>
                                 Dashboard</a>
                         </li>
-                        <li class="items-center">
-                            <a class="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block"
-                                href="#/landing"><i class="fas fa-newspaper text-blueGray-400 mr-2 text-sm"></i>
-                                Landing Page</a>
-                        </li>
-                        <li class="items-center">
-                            <a class="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block"
-                                href="#/profile"><i class="fas fa-user-circle text-blueGray-400 mr-2 text-sm"></i>
-                                Profile Page</a>
-                        </li>
-                        <li class="items-center">
-                            <a class="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block"
-                                href="#/login"><i class="fas fa-fingerprint text-blueGray-400 mr-2 text-sm"></i>
-                                Login</a>
-                        </li>
-                        <li class="items-center">
-                            <a class="text-blueGray-300 text-xs uppercase py-3 font-bold block" href="#pablo"><i
-                                    class="fas fa-clipboard-list text-blueGray-300 mr-2 text-sm"></i>
-                                Register (soon)</a>
-                        </li>
-                        <li class="items-center">
-                            <a class="text-blueGray-300 text-xs uppercase py-3 font-bold block" href="#pablo"><i
-                                    class="fas fa-tools text-blueGray-300 mr-2 text-sm"></i>
-                                Settings (soon)</a>
-                        </li>
                     </ul>
                     <hr class="my-4 md:min-w-full" />
                     <h6 class="md:min-w-full text-blueGray-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline">
-                        Documentation
+                        Other section
                     </h6>
                     <ul class="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
                         <li class="inline-flex">
                             <a class="text-blueGray-700 hover:text-blueGray-500 text-sm block mb-4 no-underline font-semibold"
                                 href="#/documentation/styles"><i
                                     class="fas fa-paint-brush mr-2 text-blueGray-400 text-base"></i>
-                                Styles</a>
-                        </li>
-                        <li class="inline-flex">
-                            <a class="text-blueGray-700 hover:text-blueGray-500 text-sm block mb-4 no-underline font-semibold"
-                                href="#/documentation/alerts"><i
-                                    class="fab fa-css3-alt mr-2 text-blueGray-400 text-base"></i>
-                                CSS Components</a>
-                        </li>
-                        <li class="inline-flex">
-                            <a class="text-blueGray-700 hover:text-blueGray-500 text-sm block mb-4 no-underline font-semibold"
-                                href="#/documentation/vue/alerts"><i
-                                    class="fab fa-vuejs mr-2 text-blueGray-400 text-base"></i>
-                                VueJS</a>
-                        </li>
-                        <li class="inline-flex">
-                            <a class="text-blueGray-700 hover:text-blueGray-500  text-sm block mb-4 no-underline font-semibold"
-                                href="#/documentation/react/alerts"><i
-                                    class="fab fa-react mr-2 text-blueGray-400 text-base"></i>
-                                React</a>
-                        </li>
-                        <li class="inline-flex">
-                            <a class="text-blueGray-700 hover:text-blueGray-500  text-sm block mb-4 no-underline font-semibold"
-                                href="#/documentation/angular/alerts"><i
-                                    class="fab fa-angular mr-2 text-blueGray-400 text-base"></i>
-                                Angular</a>
-                        </li>
-                        <li class="inline-flex">
-                            <a class="text-blueGray-700 hover:text-blueGray-500  text-sm block mb-4 no-underline font-semibold"
-                                href="#/documentation/javascript/alerts"><i
-                                    class="fab fa-js-square mr-2 text-blueGray-400 text-base"></i>
-                                Javascript</a>
+                                    option
+                                </a>
                         </li>
                     </ul>
                 </div>
@@ -181,7 +127,7 @@
                                 <span
                                     class="w-12 h-12 text-sm text-white bg-blueGray-200 inline-flex items-center justify-center rounded-full"><img
                                         alt="..." class="w-full rounded-full align-middle border-none shadow-lg"
-                                        src="./assets/img/team-1-800x800.jpg" /></span>
+                                        src="{{ asset('author-assets/img/team-1-800x800.jpg') }}" /></span>
                             </div>
                         </a>
                         <div class="hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1"
@@ -315,7 +261,7 @@
                                             </div>
                                             <div class="relative w-auto pl-4 flex-initial">
                                                 <div
-                                                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full bg-lightBlue-500">
+                                                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full bg-blue-500">
                                                     <i class="fas fa-percent"></i>
                                                 </div>
                                             </div>
@@ -352,7 +298,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="p-4 flex-auto">
+                            <div class="p-4 flex-auto mt-3">
                                 <!-- Chart -->
                                 <div class="relative" style="height:350px">
                                     <canvas id="line-chart"></canvas>
@@ -374,7 +320,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="p-4 flex-auto">
+                            <div class="p-4 flex-auto mt-3">
                                 <!-- Chart -->
                                 <div class="relative" style="height:350px">
                                     <canvas id="bar-chart"></canvas>
@@ -687,50 +633,7 @@
                         </div>
                     </div>
                 </div>
-                <footer class="block py-4">
-                    <div class="container mx-auto px-4">
-                        <hr class="mb-4 border-b-1 border-blueGray-200" />
-                        <div class="flex flex-wrap items-center md:justify-between justify-center">
-                            <div class="w-full md:w-4/12 px-4">
-                                <div class="text-sm text-blueGray-500 font-semibold py-1">
-                                    Copyright © <span id="javascript-date"></span>
-                                    <a href="https://www.creative-tim.com"
-                                        class="text-blueGray-500 hover:text-blueGray-700 text-sm font-semibold py-1">
-                                        Creative Tim
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="w-full md:w-8/12 px-4">
-                                <ul class="flex flex-wrap list-none md:justify-end  justify-center">
-                                    <li>
-                                        <a href="https://www.creative-tim.com"
-                                            class="text-blueGray-600 hover:text-blueGray-800 text-sm font-semibold block py-1 px-3">
-                                            Creative Tim
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.creative-tim.com/presentation"
-                                            class="text-blueGray-600 hover:text-blueGray-800 text-sm font-semibold block py-1 px-3">
-                                            About Us
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="http://blog.creative-tim.com"
-                                            class="text-blueGray-600 hover:text-blueGray-800 text-sm font-semibold block py-1 px-3">
-                                            Blog
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://github.com/creativetimofficial/tailwind-starter-kit/blob/main/LICENSE.md"
-                                            class="text-blueGray-600 hover:text-blueGray-800 text-sm font-semibold block py-1 px-3">
-                                            MIT License
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
+
             </div>
         </div>
     </div>
@@ -764,7 +667,7 @@
 
         (function() {
             /* Add current date to the footer */
-            document.getElementById("javascript-date").innerHTML = new Date().getFullYear();
+            //document.getElementById("javascript-date").innerHTML = new Date().getFullYear();
             /* Chart initialisations */
             /* Line Chart */
             var config = {
